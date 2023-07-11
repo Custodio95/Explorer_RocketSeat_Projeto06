@@ -1,0 +1,172 @@
+/* Principal */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+html, body, input {
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+#app {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: max-content 1fr max-content;
+    background-color: #065E7C;
+}
+
+/*  Header  */
+
+header {
+    display: flex;
+    width: min(143rem, 100%);
+    height: 7.2rem;
+    padding: 2.5rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: #065E7C;
+    margin: auto;
+}
+
+header form {
+    flex: 1;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #387E96;
+    border: 0;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    opacity: 0.56;
+    
+}
+
+.input-wrapper input::placeholder{
+    color: white;
+}
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+/*  MAIN  */
+
+main {
+    overflow-y: scroll;
+    background-color: white;
+}
+
+
+.container, .artigos {
+    padding: 0 2.6rem;
+}
+
+.principal {
+    display: flex;
+    padding: 0;
+    width: min(80rem, 100%);
+    margin: 0 auto;
+    border-radius: 0 0 8px 8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: min(80rem, 100%);
+    margin: auto;
+}
+
+.container h1, .artigos h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+}
+
+.button {
+    display: flex;
+    gap: 1.2rem;
+
+}
+
+.container p {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.artigos h1 {
+    margin-bottom: 3.2rem;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 3.2rem;
+}
+
+.item img{
+    width: 15rem;
+    height: 9rem;
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+}
+
+.details {
+    margin-left: 1.6rem;
+}
+
+.details h2 {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+.details p {
+    font-size: 14px;
+}
+
+
+footer {
+    display: flex;
+    height: 7.2rem;
+    padding: 2.5rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: #065E7C;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+@media (min-width: 1120px){
+     main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-top: 4.4rem;
+
+    }
+
+    
+}
